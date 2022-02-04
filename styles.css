@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100&display=swap');
+
+:root {
+    --primary-bgcolor: #1F2937;
+    --secondary-bgcolor: #E5E7EB;
+    --primary-textcolor: #F9FAF8;
+    --secondary-textcolor: #c2c4c7;
+    --section-textcolor: #152937;
+    --button-bgcolor: #3882F6;
+    --font-max: 48px;
+    --font-mid: 36px;
+    --font-min: 18px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/* Header and Hero */
+
+.container {
+    background-color: var(--primary-bgcolor);
+    color: var(--primary-textcolor);
+}
+
+.header,
+.hero {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    font-size: 24px;
+}
+
+ul {
+    list-style: none;
+}
+
+.header-links {
+    display: flex;
+    gap: 16px;
+    color: var(--secondary-textcolor);
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 auto;
+}
+
+.hero-left,
+.hero-right {
+    width: 450px;
+}
+
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.hero-content h1 {
+    font-size: var(--font-max);
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: var(--font-min);
+    color: var(--secondary-textcolor);
+    margin-bottom: 10px;
+
+}
+
+.hero-left .button {
+    background-color: var(--button-bgcolor);
+    color: var(--primary-textcolor);
+    width: 120px;
+    height: 30px;
+    border: 3px solid var(--button-bgcolor);
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+
+
+.hero-image {
+    width: 500px;
+    height: 250px;
+    background-color: rgba(238, 238, 238, 0.4);
+    border-radius: 3px;
+}
+
+.hero-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Section 1 */
+
+.information {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information h2 {
+    margin: 30px;
+    font-size: var(--font-mid);
+    font-weight: 900;
+}
+
+.gallery {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+}
+
+.info {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    margin: 10px;
+    width: 160px;
+    height: 160px;
+    border: 2px solid var(--button-bgcolor);
+    border-radius: 10px;
+}
+
+.some-text {
+    font-size: 14px;
+}
+
+
+/* Section 2 */
+
+.testimonials {
+    height: 500px;
+    background-color: var(--secondary-bgcolor);
+    color: var(--section-textcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quotes {
+    width: 800px;
+}
+
+.quote {
+    font-size: var(--font-mid);
+    font-style: italic;
+    font-weight: 100;
+    color: var(--primary-bgcolor)
+}
+
+.author {
+    font-size: var(--font-min);
+    font-weight: bold;
+    text-align: end;
+    margin-right: 30px;
+}
+
+/* Section 3 */
+
+.callforaction {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-box {
+    background-color: var(--button-bgcolor);
+    color: var(--primary-textcolor);
+    width: 1000px;
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.call-text h5 {
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.9;
+    margin-bottom: 3px;
+}
+
+.call-text p {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.call-button button {
+    background-color: var(--button-bgcolor);
+    color: var(--primary-textcolor);
+    width: 120px;
+    height: 30px;
+    border: 2px solid var(--primary-textcolor);
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: var(--primary-bgcolor);
+    color: var(--primary-textcolor);
+}
